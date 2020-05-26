@@ -4,6 +4,7 @@
   "description": "Have fun!",
   "main": "index.js",
   "scripts": {
+    "build": "NODE_ENV='production' babel src -d build --copy-files --extensions '.ts,.js'",
     "start": "nodemon --exec babel-node index.js",
     "test": "jest --setupFiles dotenv/config"
   },
